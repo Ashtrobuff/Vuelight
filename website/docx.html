@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="control.js"></script>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <!--<img src="images\menu.png" class="menu-img">--->
+            <img src="images\logo.png" class="logo">
+            <div class="lamp-container">
+                <img src="images\lamp.png" class="lamp">
+                <img src="images\light.png" class="light" id="throw">
+    
+            </div>
+            
+           
+            <ul>
+                    <li><a href="">Latest </a></li>
+                    <li><a href="">Modern</a></li> 
+                    <li><a href="">Comfortable</a></li>
+                
+            </ul>
+            <button type="button" onclick="lightup()" id="toggle"><span></span></button>
+        </nav>
+       <div class="text">
+      <h1>Simple,Elegant lighting Solutions.</h1>  
+     <!-- <a href="">Check Everything Out!</a>-->
+      
+       </div>
+    </div>
+
+    <script>
+        var btn= document.getElementById("toggle");
+        var light= document.getElementById("throw");
+
+        function lightup(){
+            btn.classList.toggle("active");
+            light.classList.toggle("on");
+
+        }
+
+    </script>
+</body>
+</html> 
